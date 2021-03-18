@@ -504,13 +504,13 @@ router.get('/textmaker/banner', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'zailanigans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
-        if (theme != 'write' && theme != 'underwater') return res.json(loghandler.notheme)
+        if (theme != 'flaming' && theme != 'underwater') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
 
-        if (theme == 'narutobanner') {
+        if (theme == 'flaming') {
             try {
             request.post({
-                url: "https://photooxy.com/logo-and-text-effects/write-stars-text-on-the-night-sky-200.html",
+                url: "https://photooxy.com/logo-and-text-effects/realistic-flaming-text-effect-online-197.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
