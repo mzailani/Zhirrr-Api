@@ -591,13 +591,13 @@ router.get('/textmaker/effect', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'zailanigans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
-        if (theme != 'glowing' && theme != 'harry-potter') return res.json(loghandler.notheme)
+        if (theme != 'wood' && theme != 'harry-potter') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
 
-        if (theme == 'glowing') {
+        if (theme == 'wood') {
             try {
             request.post({
-                url: "https://photooxy.com/logo-and-text-effects/make-smoky-neon-glow-effect-343.html",
+                url: "https://photooxy.com/logo-and-text-effects/carved-wood-effect-online-171.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
