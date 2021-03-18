@@ -504,13 +504,13 @@ router.get('/textmaker/banner', async (req, res, next) => {
 	if(!apikeyInput) return res.json(loghandler.notparam)
 	if(apikeyInput != 'zailanigans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
-        if (theme != 'narutobanner' && theme != 'underwater') return res.json(loghandler.notheme)
+        if (theme != 'write' && theme != 'underwater') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
 
         if (theme == 'narutobanner') {
             try {
             request.post({
-                url: "https://photooxy.com/manga-and-anime/make-naruto-banner-online-free-378.html",
+                url: "https://photooxy.com/logo-and-text-effects/write-stars-text-on-the-night-sky-200.html",
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
