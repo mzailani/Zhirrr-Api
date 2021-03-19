@@ -358,6 +358,25 @@ router.get('/lk21/search', async (req, res, next) => {
 })
 })
 
+router.get('/waifu', async (req, res, next) => {
+        var apikeyInput = req.query.apikey
+         kata = req.query.kata   
+         
+	if(!apikeyInput) return res.json(loghandler.notparam)
+	if(apikeyInput != 'ZailaniGans') return res.json(loghandler.invalidKey)
+       fetch(encodeURI(`https://docs-jojo.herokuapp.com/api/waifu`))
+        .then(response => response.json())
+        .then(data => {
+        var result = data;
+             res.json({
+                 result
+             })
+         })
+         .catch(e => {
+         	res.json(loghandler.error)
+})
+})
+
 router.get('/randomquote', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
