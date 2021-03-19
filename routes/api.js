@@ -20,7 +20,6 @@ var scrapeYt = require("scrape-yt");
 var fetch = require('node-fetch');
 var cheerio = require('cheerio');
 var request = require('request');
-var axios = require("axios");
 var TikTokScraper = require('tiktok-scraper');
 var router  = express.Router();
 
@@ -1651,93 +1650,6 @@ router.get('/textmaker/banner2', async (req, res, next) => {
         }
 })
 
-router.get('/textmaker/pro', async (req, res, next) => {
-        var theme = req.query.theme,
-             text = req.query.text,
-             text2 = req.query.text2,
-             text3 = req.query.text3,
-             apikeyInput = req.query.apikey;
-        
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'ZailaniGans') return res.json(loghandler.invalidKey)
-        if (!theme) return res.json(loghandler.nottheme)
-        if (theme != 'cloud' && theme != 'engraved') return res.json(loghandler.notheme)
-        if (!text) return res.json(loghandler.nottext)
-
-        if (theme == 'cloud') {
-            try {
-            request.post({
-                url: "https://textpro.me/create-a-cloud-text-effect-on-the-sky-online-1004.html",
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `text_1=${text}&login=Go`,
-                }, (e,r,b) => {
-                    if (!e) {
-                        $ = cheerio.load(b)
-                        $(".thumbnail").find("img").each(function() {
-                            h = $(this).attr("src")
-                            var result = "https://textpro.me/"+h
-                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
-                                .then(response => response.json())
-                                .then(data => {
-                                    var urlnya = data.data.url,
-                                        delete_url = data.data.delete_url;
-                                        res.json({
-                                            status : true,
-                                            creator : `${creator}`,
-                                            message : `jangan lupa follow ${creator}`,
-                                            result:{
-                                                url:urlnya,
-                                                delete_url: delete_url,
-                                                info: 'url akan hilang setelah 2 menit'
-                                            }
-                                        })
-                                })
-                        })
-                    }
-                })
-                } catch (e) {
-                	console.log(e);
-                res.json(loghandler.error)
-                }
-        } else if (theme == 'engraved') {
-            request.post({
-                url: "https://textpro.me/sand-engraved-3d-text-effect-989.html",
-                headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded'
-                },
-                body: `text_1=${text}&login=Go`,
-                }, (e,r,b) => {
-                    if (!e) {
-                        $ = cheerio.load(b)
-                        $(".thumbnail").find("img").each(function() {
-                            h = $(this).attr("src")
-                            var result = "https://textpro.me/"+h
-                            fetch(encodeURI(`https://api.imgbb.com/1/upload?expiration=120&key=761ea2d5575581057a799d14e9c78e28&image=${result}&name=${randomTextNumber}`))
-                                .then(response => response.json())
-                                .then(data => {
-                                    var urlnya = data.data.url,
-                                        delete_url = data.data.delete_url;
-                                        res.json({
-                                            status : true,
-                                            creator : `${creator}`,
-                                            message : `jangan lupa follow ${creator}`,
-                                            result:{
-                                                url:urlnya,
-                                                delete_url: delete_url,
-                                                info: 'url akan hilang setelah 2 menit'
-                                            }
-                                        })
-                                })
-                        })
-                    }
-                }) 
-        } else {
-            res.json(loghandler.error)
-        }
-})
-
 router.get('/textmaker/alam', async (req, res, next) => {
         var theme = req.query.theme,
              text = req.query.text,
@@ -2335,42 +2247,6 @@ router.get('/liriklagu', async (req, res, next) => {
 })
 })
 
-
-router.get('/artimimpi', async (req, res, next) => {
-        var apikeyInput = req.query.apikey,
-            mimpi = req.query.mimpi
-            
-	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'ZailaniGans') return res.json(loghandler.invalidKey)
-        if(!mimpi) return res.json({ status : false, creator : `${creator}`, message : "masukan parameter kata"})
-
-    axios
-      .get(
-        `https://www.primbon.com/tafsir_mimpi.php?mimpi=${mimpi}&submit=+Submit+`
-      )
-        .then(data => {
-        $ = cheerio.load(data);
-        cek = $("body > font > i").text();
-        adaga = /Tidak ditemukan/g.test(cek) ? false : true;
-        if (adaga) {
-        var isi = $("body")
-            .text()
-            .split(`Hasil pencarian untuk kata kunci: ${mimpi}`)[1]
-            .replace(/\n\n\n\n\n\n\n\n\n/gi, "\n");
-          var result = {
-            result: isi.replace(/\n/gi, "").replace("       ", "").replace("\"        ", "")
-          };
-          resolve(result);
-        } else {
-          var result = {
-            result: `Arti mimpi ${mimpi} tidak di temukan`
-          };
-          resolve(result);
-        }
-      })
-      .catch(reject);
-  });
-};
 
 router.get('/chordlagu', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
