@@ -502,7 +502,7 @@ router.get('/textmaker/pro', async (req, res, next) => {
              apikeyInput = req.query.apikey;
         
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'zailanigans') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'ZailaniGans') return res.json(loghandler.invalidKey)
         if (!theme) return res.json(loghandler.nottheme)
         if (theme != 'glass' && theme != 'blackpink') return res.json(loghandler.notheme)
         if (!text) return res.json(loghandler.nottext)
@@ -514,7 +514,7 @@ router.get('/textmaker/pro', async (req, res, next) => {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: `text_1=${text}&login=OK`,
+                body: `text_1=${text}&login=GO`,
                 }, (e,r,b) => {
                     if (!e) {
                         $ = cheerio.load(b)
@@ -550,7 +550,7 @@ router.get('/textmaker/pro', async (req, res, next) => {
                 headers: {
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
-                body: `text_1=${text}&login=OK`,
+                body: `text_1=${text}&login=GO`,
                 }, (e,r,b) => {
                     if (!e) {
                         $ = cheerio.load(b)
