@@ -1,0 +1,688 @@
+<!--- Code By Mzailani --->
+<!--- Mau Ngapain Om? :v --->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport" />
+      <title>Welcome To Rest Api Mzailani</title>
+      <!-- General CSS Files -->
+      <link rel="stylesheet" href="css/app.min.css" />
+      <!-- Template CSS -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/components.css" />
+      <!-- Custom style CSS -->
+      <link rel="stylesheet" href="css/custom.css" />
+      <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+      <script data-ad-client="ca-pub-9147144556578830" async src="pagead/js/adsbygoogle.js"></script>
+   </head>
+   <body>
+      <div class="loader"></div>
+      <div id="app">
+         <div class="main-wrapper main-wrapper-1">
+            <div class="navbar-bg"></div>
+            <nav class="navbar navbar-expand-lg main-navbar sticky">
+               <div class="form-inline mr-auto">
+                  <ul class="navbar-nav mr-3">
+                     <li>
+                        <a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> <i data-feather="align-justify"></i></a>
+                     </li>
+                     <li>
+                        <a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                           <i data-feather="maximize"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <form class="form-inline mr-auto">
+                           <div class="search-element">
+                              <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200" />
+                              <button class="btn" type="submit">
+                                 <i class="fas fa-search"></i>
+                              </button>
+                           </div>
+                        </form>
+                     </li>
+                  </ul>
+               </div>
+               <ul class="navbar-nav navbar-right">
+                  <li class="dropdown dropdown-list-toggle">
+                     <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle"><i data-feather="mail"></i> <span class="badge headerBadge1"> 2 </span> </a>
+                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                        <div class="dropdown-header">
+                           Messages
+                           <div class="float-right">
+                              <a href="#">Mark All As Read</a>
+                           </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-message">
+                           <a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white"> <img alt="image" src="public/img/user-1.png" class="rounded-circle" /> </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Mzailani</span>
+                                 <span class="time messege-text">Jangan Lupa Subscribe Channels Youtube : Internet Gratis</span>
+                                 <span class="time">2 Min Ago</span>
+                              </span>
+                           </a>
+                           <a href="#" class="dropdown-item">
+                              <span class="dropdown-item-avatar text-white">
+                                 <img alt="image" src="public/img/user-1.png" class="rounded-circle" />
+                              </span>
+                              <span class="dropdown-item-desc">
+                                 <span class="message-user">Mzailani</span> <span class="time messege-text">Jangan Lupa Mandi..</span>
+                                 <span class="time">5 Min Ago</span>
+                              </span>
+                           </a>
+                        </div>
+                        <div class="dropdown-footer text-center">
+                           <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="dropdown dropdown-list-toggle">
+                     <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg"><i data-feather="bell" class="bell"></i> </a>
+                     <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                        <div class="dropdown-header">
+                           Notifications
+                           <div class="float-right">
+                              <a href="#">Mark All As Read</a>
+                           </div>
+                        </div>
+                        <div class="dropdown-list-content dropdown-list-icons">
+                           <a href="#" class="dropdown-item dropdown-item-unread">
+                              <span class="dropdown-item-icon bg-primary text-white"> <i class="fas fa-code"></i> </span> <span class="dropdown-item-desc"> Template update is available now! <span class="time">2 Min Ago</span> </span>
+                           </a>
+                        </div>
+                        <div class="dropdown-footer text-center">
+                           <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                     </div>
+                  </li>
+                  <li class="dropdown">
+                     <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                        <img alt="image" src="public/img/user.png" class="user-img-radious-style" /> <span class="d-sm-none d-lg-inline-block"></span>
+                     </a>
+                     <div class="dropdown-menu dropdown-menu-right pullDown">
+                        <div class="dropdown-title">Welcome Guest</div>
+                        <a href="register.html" class="dropdown-item has-icon"> <i class="fas fa-user-plus"></i> Register </a>
+                        <a href="login.html" class="dropdown-item has-icon"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a href="forgetpass.html" class="dropdown-item has-icon"><i class="fas fa-key"></i> Lupa Sandi</a>
+                     </div>
+                  </li>
+               </ul>
+            </nav>
+            <div class="main-sidebar sidebar-style-2">
+               <aside id="sidebar-wrapper">
+                  <div class="sidebar-brand">
+                     <a href="index.html"> <img alt="image" src="public/img/logo.png" class="header-logo" /> <span class="logo-name">Mzailani Api</span> </a>
+                  </div>
+                  <div class="sidebar-user">
+                     <div class="sidebar-user-picture">
+                        <img alt="image" src="public/img/user.png" />
+                     </div>
+                     <div class="sidebar-user-details">
+                        <div class="user-name">Mzailani</div>
+                        <div class="user-role">Administrator</div>
+                     </div>
+                  </div>
+                  <ul class="sidebar-menu">
+                     <li class="menu-header">Main</li>
+                     <li>
+                        <a href="dashboard.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+                     </li>
+                     <li>
+                        <a href="princing.html" class="nav-link"><i data-feather="shopping-bag"></i><span>Princing</span></a>
+                     </li>
+                     <li class="menu-header">Menu</li>
+                     <li class="dropdown">                       
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="edit-2"></i><span>Photooxy</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&theme=glitch&apikey=MASUKIN_APIKEY">Glitch</a>
+            <a class="collapse-item" href="api/textmaker?text=halo&text2=hai&text3=gwganteng&theme=google-suggestion&apikey=MASUKIN_APIKEY">Google Suggestion</a>
+            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=pubg&apikey=MASUKIN_APIKEY">PUBG</a>
+            <a class="collapse-item" href="api/textmaker/game?text=halo&text2=hai&theme=battlefield&apikey=MASUKIN_APIKEY">BattleField</a>
+            <a class="collapse-item" href="api/textmaker/banner7?text=Mzailani&theme=gradient&apikey=MASUKIN_APIKEY">Gradient</a>
+            <a class="collapse-item" href="api/textmaker/senja?text=Mzailani&theme=coffee-cup&apikey=MASUKIN_APIKEY">Coffe</a>
+            <a class="collapse-item" href="api/textmaker/senja?text=Mzailani&theme=coffee-cup2&apikey=MASUKIN_APIKEY">Coffe2</a>
+            <a class="collapse-item" href="api/textmaker/banner4?text=Mzailani&theme=love&apikey=MASUKIN_APIKEY">Love</a>
+            <a class="collapse-item" href="api/textmaker/metallic?text=Mzailani&theme=neon&apikey=MASUKIN_APIKEY">Neon</a>
+            <a class="collapse-item" href="api/textmaker/metallic?text=Mzailani&theme=glow&apikey=MASUKIN_APIKEY">Glow</a>
+            <a class="collapse-item" href="api/textmaker/effect?text=Mzailani&theme=wood&apikey=MASUKIN_APIKEY">Wood</a>            
+            <a class="collapse-item" href="api/textmaker/alam?text=Mzailani&theme=summer&apikey=MASUKIN_APIKEY">Summer</a>
+            <a class="collapse-item" href="api/textmaker/alam?text=Mzailani&theme=flower&apikey=MASUKIN_APIKEY">Flower</a>
+            <a class="collapse-item" href="api/textmaker/banner?text=Mzailani&theme=underwater&apikey=MASUKIN_APIKEY">Underwater</a>
+            <a class="collapse-item" href="api/textmaker/banner?text=Mzailani&theme=flaming&apikey=MASUKIN_APIKEY">Flaming</a>
+            <a class="collapse-item" href="api/textmaker/effect?text=Mzailani&theme=harry-potter&apikey=MASUKIN_APIKEY">Harry Potter</a>
+            <a class="collapse-item" href="api/textmaker/banner2?text=Mzailani&theme=shadow&apikey=MASUKIN_APIKEY">Shadow</a>
+            <a class="collapse-item" href="api/textmaker/banner2?text=Mzailani&theme=cemetery&apikey=MASUKIN_APIKEY">Cemetery</a>
+            <a class="collapse-item" href="api/textmaker/banner3?text=Mzailani&theme=romantic&apikey=MASUKIN_APIKEY">Romantic</a>
+            <a class="collapse-item" href="api/textmaker/banner3?text=Mzailani&theme=burn-paper&apikey=MASUKIN_APIKEY">Burn Paper</a>
+            <a class="collapse-item" href="api/textmaker/banner4?text=Mzailani&theme=under-grass&apikey=MASUKIN_APIKEY">Under Grass</a>
+            <a class="collapse-item" href="api/textmaker/banner5?text=Mzailani&theme=wolf-metal&apikey=MASUKIN_APIKEY">Wolf Metal</a>
+            <a class="collapse-item" href="api/textmaker/banner5?text=Mzailani&theme=neon-glow&apikey=MASUKIN_APIKEY">Neon Glow</a>
+            <a class="collapse-item" href="api/textmaker/banner6?text=Mzailani&theme=metallic-glow&apikey=MASUKIN_APIKEY">Metallic Glow</a>
+            <a class="collapse-item" href="api/textmaker/banner6?text=Mzailani&theme=sweet-candy&apikey=MASUKIN_APIKEY">Sweet Candy</a>
+            <a class="collapse-item" href="api/textmaker/banner7?text=Mzailani&theme=funny-cup&apikey=MASUKIN_APIKEY">Funny Cup</a>
+            <a class="collapse-item" href="api/textmaker/new2?text=Mzailani&theme=smoke&apikey=MASUKIN_APIKEY">Smoke</a>
+            <a class="collapse-item" href="api/textmaker/banner65?text=Mzailani&theme=typography&apikey=MASUKIN_APIKEY">Smoke2</a>
+            <a class="collapse-item" href="api/textmaker/new2?text=Mzailani&theme=rainbow&apikey=MASUKIN_APIKEY">Rainbow</a>
+            <a class="collapse-item" href="api/textmaker/new3?text=Mzailani&theme=camouflage&apikey=MASUKIN_APIKEY">Camouflage</a>
+            <a class="collapse-item" href="api/textmaker/new3?text=Mzailani&theme=stars-text&apikey=MASUKIN_APIKEY">Stars Text</a>
+            <a class="collapse-item" href="api/textmaker/banner65?text=Mzailani&theme=yellow-roses&apikey=MASUKIN_APIKEY">Yellow Roses</a>
+            <a class="collapse-item" href="api/textmaker/logo4?text=halo&text2=hai&theme=8-bit&apikey=MASUKIN_APIKEY">8bit</a>
+            <a class="collapse-item" href="/api/textpro/black-pink?apikey=APIKEY&text=Lu Wibu">Black Pink Text Image</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="download"></i><span>Downloader</span></a>
+                        <ul class="dropdown-menu">
+             <a class="collapse-item" href="api/ytv2/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Youtube Video</a>
+            <a class="collapse-item" href="api/yta2/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Youtube Audio</a>
+            <a class="collapse-item" href="api/yt-play/?kata=cepu&apikey=MASUKIN_APIKEY">Youtube Play</a>
+            <a class="collapse-item" href="api/joox/?kata=blue bird&apikey=MASUKIN_APIKEY">Joox</a>
+            <a class="collapse-item" href="api/fbdown/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Facebook Downloader</a>
+            <a class="collapse-item" href="api/tiktod/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Tiktok Downloader</a>            
+            <a class="collapse-item" href="api/igtv/?url=MASUKIN_URL&apikey=MASUKIN_APIKEY">Instagram Video</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="search"></i><span>Search</span></a>
+                        <ul class="dropdown-menu">
+                        <a class="collapse-item" href="/api/playstore/search?kata=FF&apikey=MASUKAN_APIKEY">Playstore Search</a>
+                        <a class="collapse-item" href="api/yutub/search?video=Doraemon&apikey=MASUKIN_APIKEY">Youtube Search</a>                                            	
+                       	<a class="collapse-item" href="/api/lk21/search?kata=avenger&apikey=MASUKAN_APIKEY">Lk21 Search</a>
+                        <a class="collapse-item" href="/api/lk21/genre?tipe=action&apikey=MASUKAN_APIKEY">Lk21 Genre</a>
+                        <a class="collapse-item" href="/api/lk21/year?tahun=2020&apikey=MASUKAN_APIKEY">Lk21 Year</a>
+                        <a class="collapse-item" href="/api/lk21/country?negara=malaysia&apikey=MASUKAN_APIKEY">Lk21 Country</a>
+                        <a class="collapse-item" href="api/lk21/terbaru?apikey=MASUKIN_APIKEY">Lk21 Terbaru</a>
+                        <a class="collapse-item" href="api/lk21/comingsoon?apikey=MASUKIN_APIKEY">Lk21 Comingsoon</a>
+                        <a class="collapse-item" href="api/lk21/tvseries?apikey=MASUKIN_APIKEY">Lk21 Tvseries</a>
+                        <a class="collapse-item" href="/api/filmapik/search?film=the conjuring&apikey=MASUKAN_APIKEY">Film Apik Search</a>
+                        <a class="collapse-item" href="/api/filmapik/play?id=the conjuring&apikey=MASUKAN_APIKEY">Film Apik Play</a>
+                        <a class="collapse-item" href="api/filmapik/terbaru?apikey=MASUKIN_APIKEY">Film Apik Latest</a>
+                        <a class="collapse-item" href="/api/filmapik/kategori?film=action&apikey=MASUKAN_APIKEY">Film Apik Category</a>
+                        <a class="collapse-item" href="/api/kartun/search?kata=Spongebob&apikey=MASUKAN_APIKEY">Kartun Search</a>
+                        <a class="collapse-item" href="api/kartun/movie?apikey=MASUKIN_APIKEY">Kartun Movie</a>
+                        <a class="collapse-item" href="api/kartun/action?apikey=MASUKIN_APIKEY">Kartun Action</a>
+                        <a class="collapse-item" href="api/kartun/adventure?apikey=MASUKIN_APIKEY">Kartun Adventure</a>
+                        <a class="collapse-item" href="api/kartun/drama?apikey=MASUKIN_APIKEY">Kartun Drama</a>
+                        <a class="collapse-item" href="api/kartun/comedy?apikey=MASUKIN_APIKEY">Kartun Comedy</a>
+                        <a class="collapse-item" href="api/kartun/military?apikey=MASUKIN_APIKEY">Kartun Military</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="droplet"></i><span>NSFW</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="api/nsfw/ass?apikey=MASUKIN_APIKEY">Ass</a>
+            <a class="collapse-item" href="api/nsfw/ahegao?apikey=MASUKIN_APIKEY">Ahegao</a>
+            <a class="collapse-item" href="api/nsfw/blowjob?apikey=MASUKIN_APIKEY">Blowjob</a>
+            <a class="collapse-item" href="api/nsfw/bdsm?apikey=MASUKIN_APIKEY">Bdsm</a>
+            <a class="collapse-item" href="api/nsfw/cum?apikey=MASUKIN_APIKEY">Cum</a>
+            <a class="collapse-item" href="/api/classic?apikey=MASUKAN_APIKEY">Classic</a>
+            <a class="collapse-item" href="/api/spank?apikey=MASUKAN_APIKEY">Spank</a>
+            <a class="collapse-item" href="/api/hentai_gif?apikey=MASUKAN_APIKEY">Random Hentai GIF</a>
+            <a class="collapse-item" href="/api/hentai?apikey=MASUKAN_APIKEY">Random Hentai</a>
+            <a class="collapse-item" href="api/nsfw/nsfwNeko?apikey=MASUKIN_APIKEY">Nsfw Neko</a>               
+            <a class="collapse-item" href="/api/yuri?apikey=MASUKAN_APIKEY">Nsfw Yuri</a>            
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="image"></i><span>Images API</span></a>
+                        <ul class="dropdown-menu">
+             <a class="collapse-item" href="/api/pinterest?kata=Doraemon&apikey=MASUKAN_APIKEY">Pinterest</a>
+            <a class="collapse-item" href="/api/googleimage?kata=Doraemon&apikey=MASUKAN_APIKEY">Google Image</a>
+            <a class="collapse-item" href="/api/bts?apikey=MASUKAN_APIKEY">Random Bts</a>
+            <a class="collapse-item" href="/api/exo?apikey=MASUKAN_APIKEY">Random Exo</a>
+            <a class="collapse-item" href="/api/blackpink?apikey=MASUKAN_APIKEY">Random Blackpink</a>
+            <a class="collapse-item" href="api/random/wallpaper?apikey=MASUKIN_APIKEY">Wallpaper</a>
+            <a class="collapse-item" href="/api/estetikpic?apikey=MASUKAN_APIKEY">Wallpaper Aesthetic</a>
+            <a class="collapse-item" href="api/wallpaper/teknologi?apikey=MASUKAN_APIKEY">Wallpaper Teknologi</a>
+            <a class="collapse-item" href="api/wallpaper/programming?apikey=MASUKAN_APIKEY">Wallpaper Programming</a>
+            <a class="collapse-item" href="api/wallpaper/cyberspace?apikey=MASUKAN_APIKEY">Wallpaper CyberSpace</a>
+            <a class="collapse-item" href="api/wallpaper/muslim?apikey=MASUKAN_APIKEY">Wallpaper Muslim</a>
+            <a class="collapse-item" href="api/wallpaper/pegunungan?apikey=MASUKAN_APIKEY">Wallpaper Mountain View</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="umbrella"></i><span>Islamic</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="api/hadits?kitab=bukhari&nomor=52&apikey=MASUKAN_APIKEY">Hadits Shahih</a>
+            <a class="collapse-item" href="api/quran?surah=1&ayat=2&apikey=MASUKAN_APIKEY">Al Qur'an</a>
+            <a class="collapse-item" href="api/muslim/tahlil?apikey=MASUKAN_APIKEY">Doa Tahlil</a>
+            <a class="collapse-item" href="api/muslim/wirid?apikey=MASUKAN_APIKEY">Doa Wirid</a>
+            <a class="collapse-item" href="api/muslim/asmaulhusna?apikey=MASUKAN_APIKEY">Asmaul Husna</a>
+            <a class="collapse-item" href="api/muslim/doaharian?apikey=MASUKAN_APIKEY">Doa Harian</a>
+            <a class="collapse-item" href="api/muslim/ayatkursi?apikey=MASUKAN_APIKEY">Ayat Kursi</a>
+            <a class="collapse-item" href="api/kisahnabi?nabi=muhammad&apikey=MASUKAN_APIKEY">Kisah Nabi</a>
+            <a class="collapse-item" href="api/muslim/niatshalat?apikey=MASUKAN_APIKEY">Niat Shalat</a>
+            <a class="collapse-item" href="api/muslim/bacaanshalat?apikey=MASUKAN_APIKEY">Bacaan Shalat</a>
+            <a class="collapse-item" href="api/jadwalshalat?kota=padang&apikey=MASUKAN_APIKEY">Jadwal Shalat</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="feather"></i><span>Fun</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="/api/asupan?apikey=MASUKAN_APIKEY">Asupan</a>
+            <a class="collapse-item" href="/api/chikaa?apikey=MASUKAN_APIKEY">Asupan Chika</a>
+            <a class="collapse-item" href="/api/citacita?apikey=MASUKAN_APIKEY">Cita-Cita</a>             
+            <a class="collapse-item" href="/api/kuis/caklontong?apikey=MASUKAN_APIKEY">Cak Lontong</a>
+            <a class="collapse-item" href="/api/family100?apikey=MASUKAN_APIKEY">Family100</a>
+            <a class="collapse-item" href="/api/kuis/tebakgambar?apikey=MASUKAN_APIKEY">Tebak Gambar</a>
+            <a class="collapse-item" href="api/hilih?kata=aku kan ganteng banget&apikey=MASUKAN_APIKEY">Kata Hilih</a>
+            <a class="collapse-item" href="/api/dare?apikey=MASUKAN_APIKEY">Dare</a>
+            <a class="collapse-item" href="/api/truth?apikey=MASUKAN_APIKEY">Truth</a>
+            <a class="collapse-item" href="/api/dareen?apikey=MASUKAN_APIKEY">Dare-Eng</a>
+            <a class="collapse-item" href="/api/truthen?apikey=MASUKAN_APIKEY">Truth-Eng</a>
+            <a class="collapse-item" href="/api/dadu?apikey=MASUKAN_APIKEY">Dadu</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="zoom-in"></i><span>Stalk</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="/api/ig/stalk?kata=mzailani8&apikey=MASUKAN_APIKEY">Instagram Stalk</a>
+            <a class="collapse-item" href="api/tiktod/stalk/?username=MASUKIN_USERNAME&apikey=MASUKIN_APIKEY">Tiktok Stalk</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="anchor"></i><span>Primbon</span></a>
+                        <ul class="dropdown-menu">
+            <a class="collapse-item" href="/api/artinama?name=asep&apikey=MASUKAN_APIKEY">Arti Nama</a>
+            <a class="collapse-item" href="/api/tafsirmimpi?mimpi=belanja&apikey=MASUKAN_APIKEY">Tafsir Mimpi</a>
+                        </ul>                  
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="disc"></i><span>Anime</span></a>
+                        <ul class="dropdown-menu">
+                           <a class="collapse-item" href="api/samehadaku/?kata=boruto&apikey=MASUKIN_APIKEY">Samehadaku</a>
+                           <a class="collapse-item" href="api/anime/kusonime?search=planetarian&apikey=MASUKAN_APIKEY">Kusonime</a>
+                           <a class="collapse-item" href="api/manga?search=kimetsu no yaiba&apikey=MASUKAN_APIKEY">Manga</a>
+                            <a class="collapse-item" href="/api/wallpaper/anime?apikey=MASUKAN_APIKEY">Wallpaper Anime</a>
+                           <a class="collapse-item" href="/api/randomloli?apikey=MASUKAN_APIKEY">Random Loli</a>
+                           <a class="collapse-item" href="/api/waifu?apikey=MASUKAN_APIKEY">Random Waifu</a>
+                           <a class="collapse-item" href="/api/nekonime?apikey=MASUKAN_APIKEY">Random Nekonime</a>
+                           <a class="collapse-item" href="/api/husbu?apikey=MASUKAN_APIKEY">Random Husbu</a>
+                           <a class="collapse-item" href="/api/baka?apikey=MASUKAN_APIKEY">Anime Baka</a>
+                            <a class="collapse-item" href="/api/hug?apikey=MASUKAN_APIKEY">Anime Hug</a>
+                           <a class="collapse-item" href="/api/kiss5?apikey=MASUKAN_APIKEY">Anime Kiss</a>                         
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="sliders"></i><span>Random</span></a>
+                        <ul class="dropdown-menu">
+                           <a class="collapse-item" href="api/random/asmaulhusna?apikey=MASUKIN_APIKEY">Asmaul Husna</a>
+                           <a class="collapse-item" href="/api/drakjokes?apikey=MASUKAN_APIKEY">Dark Jokes</a>
+                           <a class="collapse-item" href="api/gabut?apikey=MASUKAN_APIKEY">Gabut</a>
+                           <a class="collapse-item" href="api/meme5?apikey=MASUKIN_APIKEY">Meme</a>
+                           <a class="collapse-item" href="api/random/meme?apikey=MASUKIN_APIKEY">Meme-Eng</a>
+                           <a class="collapse-item" href="api/randomquote/muslim?apikey=MASUKIN_APIKEY">Quotes Islami</a>            
+                           <a class="collapse-item" href="api/quotes/kanye?apikey=MASUKIN_APIKEY">Quotes Kanye</a>
+                           <a class="collapse-item" href="api/randomquote?apikey=MASUKIN_APIKEY">Quotes</a>                                   
+                           <a class="collapse-item" href="/api/howgay?apikey=MASUKAN_APIKEY">Howgay</a>
+                           <a class="collapse-item" href="/api/faktaunix?apikey=MASUKAN_APIKEY">Fakta Unik</a>
+                           <a class="collapse-item" href="/api/pantun?apikey=MASUKAN_APIKEY">Pantun</a>            
+                          <a class="collapse-item" href="/api/cerpen?apikey=MASUKAN_APIKEY">Cerpen</a>
+                          <a class="collapse-item" href="/api/cersex?apikey=MASUKAN_APIKEY">Cersex</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="cloud-snow"></i><span>BMKG</span></a>
+                        <ul class="dropdown-menu">
+                           <a class="collapse-item" href="api/infogempa?apikey=MASUKAN_APIKEY">Info Gempa</a>
+                           <a class="collapse-item" href="api/cuaca?kabupaten=kab bungo&apikey=MASUKAN_APIKEY">Info Cuaca</a>
+                           <a class="collapse-item" href="api/covidindo?apikey=MASUKAN_APIKEY">Covid Indo</a>
+                           <a class="collapse-item" href="api/covidworld?apikey=MASUKAN_APIKEY">Covid World</a>
+                        </ul>
+                     </li>
+                     <li class="dropdown">
+                        <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="flag"></i><span>Other</span></a>
+                        <ul class="dropdown-menu">
+                           <a class="collapse-item" href="api/nulis?text=MzailaniGanteng&apikey=MASUKAN_APIKEY">Nulis Buku</a>
+                           <a class="collapse-item" href="api/translate?kata=hi&apikey=MASUKAN_APIKEY">Translate</a>                                                     
+                           <a class="collapse-item" href="api/wikipedia?search=jembatan&apikey=MASUKAN_APIKEY">Wikipedia</a>
+                           <a class="collapse-item" href="api/drakorasia?search=tale&apikey=MASUKAN_APIKEY">Drakor Asia</a>
+                           <a class="collapse-item" href="api/fakedata?country=en&apikey=MASUKAN_APIKEY">Fake Data</a>
+                           <a class="collapse-item" href="api/liriklagu?lagu=sayang&apikey=MASUKAN_APIKEY">Lirik Lagu</a>
+                           <a class="collapse-item" href="api/chordlagu?lagu=sayang&apikey=MASUKAN_APIKEY">Chord Lagu</a>
+                           <a class="collapse-item" href="api/kbbi?kata=pohon&apikey=MASUKAN_APIKEY">KBBI</a>
+                           <a class="collapse-item" href="api/infonpm?query=Mzailani-api&hostname=Gans&apikey=MASUKAN_APIKEY">Info NPM</a>
+                           <a class="collapse-item" href="api/short/tiny?url=google.com&apikey=MASUKAN_APIKEY">Short Link</a>
+                           <a class="collapse-item" href="api/kodepos?kota=jakarta&apikey=MASUKAN_APIKEY">Kode Pos</a>
+                        </ul>
+                     </li>
+                     <li class="menu-header">My Project</li>
+                     <li>
+                        <a href="https://paypal.me/" class="nav-link"><i data-feather="heart"></i><span>Donasi</span></a>
+                     </li>
+                     <li>
+                        <a href="https://wa.me/628881277513" class="nav-link"><i data-feather="star"></i><span>Bot Whatsapp</span></a>
+                     </li>
+                     <li class="menu-header">About</li>
+                     <li>
+                        <a href="https://youtube.com/channel/UCeBl3LcjP84r5QT_2No03eg" class="nav-link"><i data-feather="youtube"></i><span>Youtube</span></a>
+                     </li>
+                     <li>
+                        <a href="https://www.instagram.com/mzailani8" class="nav-link"><i data-feather="instagram"></i><span>Instagram</span></a>
+                     </li>
+                     <li>
+                        <a href="https://github.com/" class="nav-link"><i data-feather="github"></i><span>Github</span></a>
+                     </li>
+                  </ul>
+               </aside>
+            </div>
+            <!-- Main Content -->
+            <div class="main-content">
+               <section class="section">
+                  <ul class="breadcrumb breadcrumb-style">
+                     <li class="breadcrumb-item">
+                        <h4 class="page-title m-b-0">Dashboard</h4>
+                     </li>
+                     <li class="breadcrumb-item">
+                        <a href="index.html"> <i class="fas fa-home"></i></a>
+                     </li>
+                     <li class="breadcrumb-item active">Dashboard</li>
+                  </ul>
+                  <div class="row">
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">Total Request</h6>
+                                 <h4 class="text-right"><i class="fas fa-chart-line pull-left bg-indigo c-icon"></i><span id="visit">0</span></h4>
+                                 <p class="mb-0 mt-3 text-muted">Jumlah semua request</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">IP KAMU</h6>
+                                 <h4 class="text-right"><i class="fas fa-wifi pull-left bg-orange c-icon"></i><span>23.236.148.77</span></h4>
+                                 <p class="mb-0 mt-3 text-muted">ALAMAT IP KAMU</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">User Terdaftar</h6>
+                                 <h4 class="text-right"><i class="fas fa-users pull-left bg-cyan c-icon"></i><span>500</span></h4>
+                                 <p class="mb-0 mt-3 text-muted">Total user terdaftar</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                    <form action="/api/cekapikey">
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row align-items-center">
+                    <div class="col mr-2">
+           <div class="h6 mb-0 font-weight-bold text-dark-800 text-uppercase">
+          <h6 class="text-center">[+] cek apikey [+]</h6>
+          </div>
+           <input type="password" class="form-control" placeholder="Check Your apikey" name="apikey" required=""><br>
+            <button class="btn btn-danger btn-icon-split">
+             <span class="icon text-white-50">
+              <i class="fas fa-check"></i>
+             </span>
+             <span class="text">Check</span>
+            </button>
+            </div>
+            </div>
+             </div>
+              </div>
+               </div>
+                 </form>
+                     <div class="col-lg-3 col-sm-6">
+                        <div class="card">
+                           <div class="card-statistic-4">
+                              <div class="info-box7-block">
+                                 <h6 class="m-b-20 text-right">Time Now</h6>
+                                 <h4 class="text-right"><i class="far fa-clock pull-left bg-green c-icon"></i><span id="browser_info">00.00</span></h4>
+                                 <p class="mb-0 mt-3 text-muted"><span id="browser_sholat"></span></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+<div class="row">
+   <script async src="pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-9147144556578830" data-ad-slot="5382084382" data-ad-format="auto" data-full-width-responsive="true"></ins>
+   <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</div>
+                  <div class="row">
+                     <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="card card-info">
+                           <div class="card-header">
+                              <h4>Syarat & Ketentuan</h4>
+                              <div class="card-header-action">
+                                 <a data-collapse="#mycard-collapse" class="btn btn-icon btn-info" href="#"><i class="fas fa-minus"></i></a>
+                              </div>
+                           </div>
+                           <div class="collapse show" id="mycard-collapse">
+                              <div class="card-body">
+                                 <ol>
+                                    <li>Jangan melakukan banyak request dalam beberapa detik itu akan membuat error apikey mu.</li>
+                                    <li>Membuat banyak akun dengan <b>IP</b> yang sama maka <b>IP</b> otomatis akan terblokir.</li>
+                                    <li>Admin dapat sewaktu waktu mengubah ketentuan di website ini, demi menjaga kualitas website.</li>
+                                    <li>Segera lapor apabila ada menu yang tidak berfungsi dengan baik!.</li>
+                                    <li>Admin tidak bertanggung jawab atas apa yang Anda lakukan dalam penggunaan website ini.</li>
+                                    <li>Jika ingin request menu atau berdonasi kalian bisa langsung hubungi kami.</li>
+                                 </ol>
+                              </div>
+                              <div class="card-footer">
+                                 Mzailani.
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+<div class="row">
+   <script async src="pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-9147144556578830" data-ad-slot="5382084382" data-ad-format="auto" data-full-width-responsive="true"></ins>
+   <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</div>
+                     <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="card">
+                           <div class="card-header">
+                              <h4>Baca Dulu Ngapa</h4>
+                           </div>
+                           <div class="card-body">
+                              <ul class="list-unstyled list-unstyled-border list-unstyled-noborder">
+                                 <li class="media">
+                                    <img alt="image" class="mr-3 rounded-circle" width="70" src="public/img/user-1.png" />
+                                    <div class="media-body">
+                                       <div class="media-title mb-1">Mzailani</div>
+                                       <div class="text-time">Yesterday</div>
+                                       <div class="media-description text-muted">Website Ini masih dalam pengembangan jadi wajar jika masih ada banyak bug atau error.</div>
+                                    </div>
+                                 </li>
+                                 <li class="media">
+                                    <img alt="image" class="mr-3 rounded-circle" width="70" src="public/img/user-1.png" />
+                                    <div class="media-body">
+                                       <div class="media-title mb-1">Mzailani</div>
+                                       <div class="text-time">Yesterday</div>
+                                       <div class="media-description text-muted">Untuk Mendapatkan Apikey anda bisa melakukan Register lalu login untuk melihat apikey.</div>
+                                    </div>
+                                 </li>
+                                 <li class="media">
+                                    <img alt="image" class="mr-3 rounded-circle" width="70" src="public/img/user-1.png" />
+                                    <div class="media-body">
+                                       <div class="media-title mb-1">Mzailani</div>
+                                       <div class="text-time">Yesterday</div>
+                                       <div class="media-description text-muted">
+                                          Untuk kalian yang ingin mengakses apikey secara leluasa dan bisa di jual kembali agan bisa upgrade ke <b><i>User Premium dan bisa meng akses semua fitur.</i></b>
+                                       </div>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+<div class="row">
+   <script async src="pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-9147144556578830" data-ad-slot="5382084382" data-ad-format="auto" data-full-width-responsive="true"></ins>
+   <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</div>
+                     <div class="col-12 col-sm-12 col-lg-4">
+                        <div class="card">
+                           <div class="card-header">
+                              <h4>Activity</h4>
+                           </div>
+                           <div class="card-body">
+                              <div id="activity-scroll">
+                                 <ul class="activity-list">
+                                    <li>
+                                       <i class="activity-icon bg-success"></i>
+                                       <h6>Add Menu Downloader<small class="float-right text-muted">08 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                    <li>
+                                       <i class="activity-icon bg-info"></i>
+                                       <h6>Add Menu Islamic<small class="float-right text-muted tx-11">08 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                    <li>
+                                       <i class="activity-icon bg-red"></i>
+                                       <h6>Add Menu Text Maker<small class="float-right text-muted tx-11">07 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                    <li>
+                                       <i class="activity-icon bg-primary"></i>
+                                       <h6>Add Menu Funn<small class="float-right text-muted tx-11">07 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                    <li>
+                                       <i class="activity-icon bg-orange"></i>
+                                       <h6>Add Menu Random<small class="float-right text-muted tx-11">06 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                    <li>
+                                       <i class="activity-icon bg-green"></i>
+                                       <h6>Add Menu Search<small class="float-right text-muted tx-11">06 Maret 2021</small></h6>
+                                       <span class="font-12">Author : Mzailani</span>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+<div class="row">
+   <script async src="pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle" style="display: block;" data-ad-client="ca-pub-9147144556578830" data-ad-slot="5382084382" data-ad-format="auto" data-full-width-responsive="true"></ins>
+   <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+   </script>
+</div>
+                  </div>
+               </section>
+               <div class="settingSidebar">
+                  <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i> </a>
+                  <div class="settingSidebar-body ps-container ps-theme-default">
+                     <div class="fade show active">
+                        <div class="setting-panel-header">Setting Panel</div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Select Layout</h6>
+                           <div class="selectgroup layout-color w-50">
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked />
+                                 <span class="selectgroup-button">Light</span>
+                              </label>
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout" />
+                                 <span class="selectgroup-button">Dark</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                           <div class="selectgroup selectgroup-pills sidebar-color">
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar" />
+                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                              </label>
+                              <label class="selectgroup-item">
+                                 <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked />
+                                 <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip" data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <h6 class="font-medium m-b-10">Color Theme</h6>
+                           <div class="theme-setting-options">
+                              <ul class="choose-theme list-unstyled mb-0">
+                                 <li title="white" class="active">
+                                    <div class="white"></div>
+                                 </li>
+                                 <li title="cyan">
+                                    <div class="cyan"></div>
+                                 </li>
+                                 <li title="black">
+                                    <div class="black"></div>
+                                 </li>
+                                 <li title="purple">
+                                    <div class="purple"></div>
+                                 </li>
+                                 <li title="orange">
+                                    <div class="orange"></div>
+                                 </li>
+                                 <li title="green">
+                                    <div class="green"></div>
+                                 </li>
+                                 <li title="red">
+                                    <div class="red"></div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <div class="theme-setting-options">
+                              <label class="m-b-0">
+                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="mini_sidebar_setting" />
+                                 <span class="custom-switch-indicator"></span>
+                                 <span class="control-label p-l-10">Mini Sidebar</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="p-15 border-bottom">
+                           <div class="theme-setting-options">
+                              <label class="m-b-0">
+                                 <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" id="sticky_header_setting" />
+                                 <span class="custom-switch-indicator"></span>
+                                 <span class="control-label p-l-10">Sticky Header</span>
+                              </label>
+                           </div>
+                        </div>
+                        <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                           <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme"> <i class="fas fa-undo"></i> Restore Default </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <footer class="main-footer">
+               <div class="footer-left">
+                  Copyright &copy; 2021
+                  <div class="bullet"></div>
+                  Group Whatsapp Saya<a href="https://chat.whatsapp.com/Kkg8YN2UcfBJjqum5drFKV">Klik disini</a>
+               </div>
+               <div class="footer-right"></div>
+            </footer>
+         </div>
+      </div>
+      <!-- General JS Scripts -->
+      <script src="js/app.min.js"></script>
+      <!-- Template JS File -->
+      <script src="js/scripts.js"></script>
+      <script src="js/ojan.js"></script>
+      <!-- Custom JS File -->
+      <script src="js/custom.js"></script>
+</html>
